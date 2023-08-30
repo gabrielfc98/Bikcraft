@@ -1,0 +1,37 @@
+ul,
+dl,
+dd {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --p1: #ffbb00;
+  --p2: #e5a40b;
+  --p3: #a66f00;
+  --p4: #664400;
+  --p5: #332200;
+  --w: #ffffff;
+  --c12: #000000;
+  --c11: #121212;
+  --c10: #2e2e2e;
+  --c9: #404040;
+  --c8: #595959;
+  --c7: #707070;
+  --c6: #9c9c9c;
+  --c5: #b2b2b2;
+  --c4: #cccccc;
+  --c3: #dedede;
+  --c2: #ededed;
+  --c1: #f7f7f7;
+}

@@ -1,0 +1,82 @@
+:root {
+  --gradient: linear-gradient(#ffbf00, #f2a50c);
+  --gradient2: linear-gradient(#ffb60d, #e59317);
+  --p1: #ffbb00;
+  --p2: #e5a40b;
+  --p3: #a66f00;
+  --p4: #664400;
+  --p5: #332200;
+  --w: #ffffff;
+  --c12: #000000;
+  --c11: #121212;
+  --c10: #2e2e2e;
+  --c9: #404040;
+  --c8: #595959;
+  --c7: #707070;
+  --c6: #9c9c9c;
+  --c5: #b2b2b2;
+  --c4: #cccccc;
+  --c3: #dedede;
+  --c2: #ededed;
+  --c1: #f7f7f7;
+}
+/* Colors for decoration  of the website */
+.color-p1 {
+  color: var(--p1);
+}
+.color-p2 {
+  color: var(--p2);
+}
+.color-p3 {
+  color: var(--p3);
+}
+.color-p4 {
+  color: var(--p4);
+}
+.color-p5 {
+  color: var(--p5);
+}
+
+/* Colors for main content of the site */
+.color-c1 {
+  color: var(--c1);
+}
+.color-c2 {
+  color: var(--c2);
+}
+.color-c3 {
+  color: var(--c3);
+}
+.color-c4 {
+  color: var(--c4);
+}
+.color-c5 {
+  color: var(--c5);
+}
+.color-c6 {
+  color: var(--c6);
+}
+.color-c7 {
+  color: var(--c7);
+}
+.color-c8 {
+  color: var(--c8);
+}
+.color-c9 {
+  color: var(--c9);
+}
+.color-c1 {
+  color: var(--c1);
+}
+.color-c10 {
+  color: var(--c10);
+}
+.color-c11 {
+  color: var(--c11);
+}
+.color-c12 {
+  color: var(--c12);
+}
+.color-w {
+  color: var(--w);
+}

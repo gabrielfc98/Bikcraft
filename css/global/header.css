@@ -18,12 +18,8 @@
 }
 
 .header-menu a {
-  font-family: Poppins;
-  font-weight: Medium;
-  font-size: 1.125rem;
-  line-height: 2rem;
-  color: var(--w);
   padding: 16px 0px;
+  color: var(--w);
   display: inline-block;
   position: relative;
 }

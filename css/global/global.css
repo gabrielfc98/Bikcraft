@@ -27,6 +27,10 @@ img {
   display: block;
 }
 
+img[src$=".jpg"] {
+  border-radius: 4px;
+}
+
 .btn {
   background: var(--gradient);
   padding: 16px 32px;
@@ -41,4 +45,11 @@ img {
 
 .btn:hover {
   background: var(--gradient2);
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }

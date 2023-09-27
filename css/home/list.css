@@ -1,0 +1,67 @@
+.list {
+  padding: 32px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.list-bg {
+  padding: 80px 0px;
+}
+
+.list-title {
+  padding: 8px 0px 40px 0px;
+}
+
+.list-bikes {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  padding: 0 20px 20px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.list-bikes li {
+  min-width: 280px;
+}
+
+.magic-might-photo,
+.nimbus-stark-photo,
+.nebula-cosmic-photo {
+  padding-bottom: 16px;
+}
+
+.bike-title {
+  padding-bottom: 8px;
+}
+
+.bike-info {
+  position: relative;
+  padding-left: 16px;
+}
+
+.bike-info::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  position: absolute;
+  background: var(--p1);
+  display: inline-block;
+  top: 16px;
+  left: 0px;
+  transition: width 0.2s;
+}
+
+.bike-info a:hover::before {
+  width: 24px;
+}
+
+@media (max-width: 800px) {
+  .list-bikes {
+    gap: 20px;
+  }
+  .list-title {
+    padding-left: 20px;
+  }
+}

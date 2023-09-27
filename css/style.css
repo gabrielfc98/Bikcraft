@@ -1,5 +1,10 @@
+/* Estilos globais */
 @import "./global/global.css";
 @import "./global/header.css";
-@import "./home/introduction.css";
 @import "./global/colors.css";
 @import "./global/typography.css";
+
+/* Home */
+@import "./home/list.css";
+@import "./home/technology.css";
+@import "./home/introduction.css";

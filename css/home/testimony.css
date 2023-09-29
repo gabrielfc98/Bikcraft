@@ -1,0 +1,124 @@
+.testimony {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--p1);
+}
+
+.testimony-content h3 {
+  font: 900 2rem/1.25 "Merriweather", serif;
+  font-style: italic;
+  max-width: 32ch;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.testimony-content h3::before {
+  content: "“";
+  font-size: 5rem;
+  color: var(--p2);
+  position: absolute;
+  left: -50px;
+  top: -20px;
+}
+
+.testimony-content h3::after {
+  content: "”";
+  font-size: 5rem;
+  color: var(--p2);
+  position: absolute;
+}
+
+.testimony-content p {
+  font: 600 1.5rem/1.33 "Poppins", sans-serif;
+}
+
+.testimony-content {
+  padding: 40px 40px 80px 80px;
+  align-self: end;
+}
+
+.testimony img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  object-fit: cover;
+  object-position: left;
+}
+
+@media (max-width: 800px) {
+  .testimony-content h3 {
+    font-size: 1.5rem;
+  }
+  .testimony-content p {
+    font-size: 1rem;
+  }
+
+  .testimony-content {
+    padding: 80px 80px 40px 80px;
+    justify-self: center;
+  }
+
+  .testimony-content h3::before,
+  .testimony-content h3::after {
+    font-size: 4rem;
+  }
+
+  .testimony-content h3::before {
+    left: -40px;
+  }
+}
+
+@media (max-width: 670px) {
+  .testimony-content h3 {
+    font-size: 2rem;
+  }
+  .testimony-content p {
+    font-size: 1.5rem;
+  }
+
+  .testimony img {
+    max-width: 500px;
+  }
+  .testimony-content h3::before,
+  .testimony-content h3::after {
+    font-size: 4rem;
+  }
+
+  .testimony-content h3::before {
+    top: -15px;
+    left: -30px;
+  }
+
+  .testimony {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .testimony-content {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .testimony-content h3 {
+    font-size: 1rem;
+    padding-bottom: 16px;
+  }
+  .testimony-content p {
+    font-size: 0.5rem;
+  }
+
+  .testimony-content h3::before,
+  .testimony-content h3::after {
+    font-size: 2rem;
+  }
+
+  .testimony-content h3::before {
+    top: -5px;
+    left: -20px;
+  }
+
+  .testimony-content {
+    padding: 20px 40px;
+  }
+}

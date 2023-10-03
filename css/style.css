@@ -10,3 +10,6 @@
 @import "./home/introduction.css";
 @import "./home/partner.css";
 @import "./home/testimony.css";
+
+/* Insurance */
+@import "./insurance/insurance.css";

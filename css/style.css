@@ -3,6 +3,7 @@
 @import "./global/header.css";
 @import "./global/colors.css";
 @import "./global/typography.css";
+@import "./global/footer.css";
 
 /* Home */
 @import "./home/list.css";

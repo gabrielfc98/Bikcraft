@@ -3,7 +3,8 @@
 }
 
 .list-title {
-  padding: 8px 0px 40px 0px;
+  padding-top: 8px;
+  padding-bottom: 40px;
 }
 
 .list-bikes {
@@ -53,8 +54,5 @@
 @media (max-width: 800px) {
   .list-bikes {
     gap: 20px;
-  }
-  .list-title {
-    padding-left: 20px;
   }
 }

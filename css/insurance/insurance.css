@@ -16,6 +16,10 @@
   align-items: center;
 }
 
+.insurance-content {
+  padding-bottom: 60px;
+}
+
 .insurance-title h3,
 .insurance-title p {
   text-transform: uppercase;

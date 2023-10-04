@@ -1,0 +1,35 @@
+.terms-conditions h2 {
+  font: 600 1.5rem/1.5 "Poppins", sans-serif;
+  padding-bottom: 16px;
+  color: var(--c11);
+}
+
+.terms-conditions p {
+  font: 400 1.5rem/1.33 "Roboto", sans-serif;
+  padding-bottom: 32px;
+  color: var(--c10);
+  max-width: 75ch;
+}
+
+.terms-conditions {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+@media (max-width: 800px) {
+  .terms-conditions {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .terms-conditions h2,
+  .terms-conditions p {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 600px) {
+  .terms-conditions h2,
+  .terms-conditions p {
+    font-size: 1rem;
+  }
+}

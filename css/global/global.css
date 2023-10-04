@@ -54,3 +54,26 @@ img[src$=".jpg"] {
   margin: 0 auto;
   padding: 20px;
 }
+
+/* Titles of internal website pages */
+
+.title-bg {
+  background-color: var(--c11);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.title h2 {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .title h2 {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+  .title-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

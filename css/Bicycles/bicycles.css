@@ -1,59 +1,59 @@
-.bicicles-bg {
+.bicycles-bg {
   background: linear-gradient(to right, var(--w) 25%, var(--c11) 0%);
 }
 /* div */
-.bicicles {
+.bicycles {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.bicicles-content {
+.bicycles-content {
   display: grid;
   grid-template-columns: 1fr auto;
   align-content: start;
 }
 /* btn */
-.bicicles-content a {
+.bicycles-content a {
   grid-column: 2;
   place-self: end;
 }
-.bicicles-content a img {
+.bicycles-content a img {
   display: inline-block;
   margin-left: 16px;
   transition: transform 0.2s;
 }
-.bicicles-content .btn:hover img {
+.bicycles-content .btn:hover img {
   transform: translateX(4px);
 }
-/* Bicicle characteristics */
-.bicicles-content li {
+/* bicycle characteristics */
+.bicycles-content li {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.bicicles-content ul {
+.bicycles-content ul {
   grid-column: 1;
 }
-.bicicles-content ul img {
+.bicycles-content ul img {
   width: 24px;
 }
 
-.bicicles-content li:nth-child(-n + 3) {
+.bicycles-content li:nth-child(-n + 3) {
   margin-bottom: 8px;
 }
 /* Bike Description and Title */
-.bicicles h2 {
+.bicycles h2 {
   margin-bottom: 20px;
   grid-column: 1/-1;
 }
-.bicicles-content p {
+.bicycles-content p {
   grid-column: 1 / -1;
   margin-bottom: 32px;
 }
 
-.bicicles h2::before {
+.bicycles h2::before {
   content: "";
   width: 12px;
   height: 8px;
@@ -62,15 +62,15 @@
   margin-bottom: 8px;
 }
 /* Bike Image */
-.bicicles-image {
+.bicycles-image {
   display: grid;
 }
 
-.bicicles-image img {
+.bicycles-image img {
   grid-area: 1/1;
 }
 
-.bicicles-image span {
+.bicycles-image span {
   display: inline-block;
   padding: 8px 16px 8px 8px;
   background-color: var(--c12);
@@ -81,27 +81,27 @@
   margin-top: 20px;
 }
 @media (max-width: 900px) {
-  .bicicles {
+  .bicycles {
     grid-template-columns: 1fr;
     gap: 20;
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .bicicles-bg {
+  .bicycles-bg {
     background: var(--c11);
   }
 }
 
 @media (max-width: 600px) {
-  .bicicles-content {
+  .bicycles-content {
     grid-template-columns: 1fr;
   }
-  .bicicles-content .btn {
+  .bicycles-content .btn {
     grid-row: 4;
     place-self: start;
     grid-column: 1;
   }
-  .bicicles-content ul {
+  .bicycles-content ul {
     margin-bottom: 32px;
     display: grid;
     grid-template-columns: 1fr 1fr;

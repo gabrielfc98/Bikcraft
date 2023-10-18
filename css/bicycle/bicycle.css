@@ -1,0 +1,135 @@
+.bicycle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Bicyle imgs */
+.bicyle-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bicyle-images img {
+  flex: 1;
+  min-width: 200px;
+}
+
+.bicyle-images img:first-child {
+  min-width: 100%;
+}
+
+/* Order section */
+.bicyle-content-order {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-items: start;
+  gap: 4px 12px;
+}
+
+.bicyle-content-order a {
+  grid-row: span 2;
+}
+
+.bicyle-content-order span {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  background-color: var(--c12);
+  border-radius: 4px;
+}
+
+.bicycle h3 {
+  font: 400 0.75rem/1.33 "Roboto", sans-serif;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* Spacing */
+.bicycle-content > p {
+  margin-bottom: 32px;
+}
+.bicyle-content-order {
+  margin-bottom: 40px;
+}
+
+/* Box-information */
+.bicycle-content-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  background-color: var(--c12);
+  padding: 32px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+
+.bicycle-content-info img {
+  margin-bottom: 4px;
+  width: 24px;
+}
+.bicycle-content-info h2 {
+  margin-bottom: 8px;
+}
+/* Box-datasheet */
+.bicycle-content-datasheet {
+  display: grid;
+  background-color: var(--c12);
+  padding: 32px;
+  gap: 12px;
+  border-radius: 4px;
+}
+.bicycle-content-datasheet li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--c11);
+  padding: 4px 0px;
+}
+
+.bicycle-content-datasheet li:last-child {
+  border-bottom: none;
+}
+
+#bicycle .title h2 {
+  text-transform: uppercase;
+}
+
+@media (max-width: 850px) {
+  .bicycle {
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .bicyle-images {
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 400px) {
+  .bicycle {
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .bicycle-content-info {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .bicyle-images img {
+    flex: 1;
+    min-width: 100px;
+  }
+  .bicyle-content-order {
+    grid-template-columns: 1fr;
+  }
+  .bicyle-content-order a {
+    margin-bottom: 12px;
+  }
+}

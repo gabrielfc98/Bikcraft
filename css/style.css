@@ -4,6 +4,7 @@
 @import "./global/colors.css";
 @import "./global/typography.css";
 @import "./global/footer.css";
+@import "./global/form.css";
 
 /* Home */
 @import "./home/list.css";
@@ -26,3 +27,7 @@
 /* Bicycle */
 @import "./bicycle/bicycle.css";
 @import "./bicycle/bicycle-insurance.css";
+
+/* Contact */
+@import "./contact/contact.css";
+@import "./contact/stores.css";

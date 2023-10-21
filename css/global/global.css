@@ -42,6 +42,9 @@ img[src$=".jpg"] {
   font-family: "Poppins";
   text-transform: uppercase;
   font: 600 1.125rem/1.33 "Poppins", sans-serif;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {

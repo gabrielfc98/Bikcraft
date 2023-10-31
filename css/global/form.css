@@ -12,7 +12,8 @@
 
 .form input[type="text"],
 .form input[type="email"],
-.form textarea {
+.form textarea,
+select {
   font: 400 1rem/1.5 "Roboto", sans-serif;
   background-color: var(--c1);
   border-radius: 4px;
@@ -24,7 +25,8 @@
 
 .form input[type="text"]:focus,
 .form input[type="email"]:focus,
-.form textarea:focus {
+.form textarea:focus,
+select:focus {
   outline: none;
   border-color: var(--p1);
   background-color: var(--w);

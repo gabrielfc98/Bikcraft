@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Seguros | Bikcraft</title>
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body id="insurance">
@@ -22,7 +23,7 @@
             <nav aria-label="primary navigation">
                 <ul class="header-menu font-1-l">
                     <li><a href="./bicicletas.html">Bicicletas</a></li>
-                    <li><a href="./seguro.html">Seguros</a></li>
+                    <li><a href="./seguros.html">Seguros</a></li>
                     <li><a href="./contato.html">Contato</a></li>
                 </ul>
             </nav>
@@ -38,7 +39,7 @@
         </div>
         <div class="insurance-content container">
             <div class="insurance-plans">
-                <div class="insurance-silver">
+                <div class="insurance-silver fadeInLeft" data-anime="300">
                     <div class="insurance-title">
                         <h3 class="font-1-xl color-c6">prata</h3>
                         <div class="price">
@@ -52,9 +53,9 @@
                         <li>Suporte 08h às 18h</li>
                         <li>Cobertura estadual</li>
                     </ul>
-                    <a href="./orcamento.html" class="btn">inscreva-se</a>
+                    <a href="./orcamento.html?type=insurance&product=prata" class="btn">inscreva-se</a>
                 </div>
-                <div class="insurance-gold">
+                <div class="insurance-gold fadeInRight" data-anime="300">
                     <div class="insurance-title">
                         <h3 class="font-1-xl color-p1">ouro</h3>
                         <div class="price">
@@ -70,7 +71,7 @@
                         <li>Desconto em parceiros</li>
                         <li>Acesso ao Clube Bikcraft</li>
                     </ul>
-                    <a href="./orcamento.html" class="btn">inscreva-se</a>
+                    <a href="./orcamento.html?type=insurance&product=ouro" class="btn">inscreva-se</a>
                 </div>
             </div>
         </div>
@@ -120,32 +121,32 @@
         <h1 class="font-1-xxl color-c11">perguntas frequentes<span class="color-p1">.</span></h1>
         <dl>
             <div>
-                <dt>Qual forma de pagamento vocês aceitam?</dt>
-                <dd>Aceitamos cartões de créditos com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro. </dd>
+                <dt><button aria-controls="question1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></dt>
+                <dd id="question1" class="active">Aceitamos cartões de créditos com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro. </dd>
             </div>
             <div>
-                <dt>Como posso entrar em contato?</dt>
-                <dd>Você pode entrar em contato conosco através da página de <a class="color-c11" href="./contato.html">contato</a>, através de nosso telefone ou por meio de nossas redes sociais</dd>
+                <dt><button aria-controls="question2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+                <dd id="question2">Você pode entrar em contato conosco através da página de <a class="color-c11" href="./contato.html">contato</a>, através de nosso telefone ou por meio de nossas redes sociais</dd>
             </div>
             <div>
-                <dt>Vocês possuem algum desconto?</dt>
-                <dd>Sim, oferecemos descontos sazonais e promoções especiais. Fique de olho em nosso site para as ofertas atuais!</dd>
+                <dt><button aria-controls="question3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+                <dd id="question3">Sim, oferecemos descontos sazonais e promoções especiais. Fique de olho em nosso site para as ofertas atuais!</dd>
             </div>
             <div>
-                <dt>Qual a garantia que possuo?</dt>
-                <dd>Todos os nossos produtos têm garantia de 2 anos para defeitos de fabricação. Saiba mais em <a class="color-c11" href="./termos.html">termos e condições</a>.</dd>
+                <dt><button aria-controls="question4" aria-expanded="false">Qual a garantia que possuo?</button></dt>
+                <dd id="question4">Todos os nossos produtos têm garantia de 2 anos para defeitos de fabricação. Saiba mais em <a class="color-c11" href="./termos.html">termos e condições</a>.</dd>
             </div>
             <div>
-                <dt>Posso parcelar no boleto?</dt>
-                <dd>Infelizmente, o parcelamento está disponível apenas para pagamentos com cartão de crédito. Aceitamos diversas bandeiras.</dd>
+                <dt><button aria-controls="question5" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+                <dd id="question5">Infelizmente, o parcelamento está disponível apenas para pagamentos com cartão de crédito. Aceitamos diversas bandeiras.</dd>
             </div>
             <div>
-                <dt>Quantas trocas posso fazer ao ano?</dt>
-                <dd>Através de nossos planos de seguro você pode conseguir um número específico de trocas por ano.O plano prata oferece duas trocas por ano enquanto o plano ouro oferece cinco trocas. Conheça mais sobre os planos <a class="color-c11" href="./seguros.html">aqui</a>.</dd>
+                <dt><button aria-controls="question6" aria-expanded="false">Quantas trocas posso fazer ao ano?</button></dt>
+                <dd id="question6">Através de nossos planos de seguro você pode conseguir um número específico de trocas por ano.O plano prata oferece duas trocas por ano enquanto o plano ouro oferece cinco trocas. Conheça mais sobre os planos <a class="color-c11" href="./seguros.html">aqui</a>.</dd>
             </div>
             <div>
-                <dt>Quanto tempo em média dura a bateria da Bikcraft?</dt>
-                <dd> A duração média da bateria da Bikcraft varia de acordo com o modelo e o uso, mas geralmente varia de 40 a 60 quilômetros por carga. Consulte as especificações do produto para obter detalhes precisos.</dd>
+                <dt><button aria-controls="question7" aria-expanded="false">Quanto tempo em média dura a bateria da Bikcraft?</button></dt>
+                <dd id="question7"> A duração média da bateria da Bikcraft varia de acordo com o modelo e o uso, mas geralmente varia de 40 a 60 quilômetros por carga. Consulte as especificações do produto para obter detalhes precisos.</dd>
             </div>
         </dl>
     </article>
@@ -172,7 +173,7 @@
                 <nav>
                     <ul class="font-1-m">
                         <li><a href="./bicicletas.html">Bicicletas</a></li>
-                        <li><a href="./seguro.html">Seguros</a></li>
+                        <li><a href="./seguros.html">Seguros</a></li>
                         <li><a href="./contato.html">Contato</a></li>
                         <li><a href="./termos.html">Termos e Condições</a></li>
                     </ul>
@@ -181,6 +182,8 @@
             <p class="rights color-c6">Bikcraft © Alguns direitos reservados.</p>
         </div>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
